@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "project": {
+    "name": "GetPatched",
+    "repository": "getpatched/packaging-ffmpeg",
+    "description": "Debian Trixie rebuild recipe for FFmpeg multimedia tools."
+  },
+  "package": {
+    "source": "ffmpeg",
+    "description": "FFmpeg multimedia tools",
+    "upstreamProject": "FFmpeg multimedia tools",
+    "upstreamRepository": "https://ffmpeg.org/",
+    "copyrightFile": "LICENSES/debian-copyright"
+  },
+  "targets": [
+    {
+      "id": "debian-trixie-amd64",
+      "file": "targets/debian/trixie-amd64.json"
+    }
+  ],
+  "patchMetadata": "patches/metadata.json",
+  "regressionTests": {
+    "fixturesDirectory": "ci/debian-trixie-amd64",
+    "runner": "ci/debian-trixie-amd64/smoke.sh"
+  },
+  "licensing": {
+    "publicContributionsSpdx": "MIT",
+    "publicContributionsLicenseFile": "LICENSE",
+    "fileLicenses": [],
+    "earlyBinaryLicenseId": null,
+    "earlyBinaryTermsFile": null,
+    "upstreamCopyrightFile": "LICENSES/debian-copyright",
+    "upstreamLicenses": "preserve"
+  }
+}

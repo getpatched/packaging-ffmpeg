@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "status": "ci-baseline",
+  "id": "debian-trixie-amd64",
+  "base": {
+    "distribution": "Debian",
+    "release": "13",
+    "codename": "trixie",
+    "sourcePocket": "release",
+    "architecture": "amd64"
+  },
+  "source": {
+    "format": "3.0 (quilt)",
+    "version": "7:7.1.5-0+deb13u1",
+    "publication": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/",
+    "descriptor": {
+      "name": "ffmpeg_7.1.5-0+deb13u1.dsc",
+      "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/f/ffmpeg/ffmpeg_7.1.5-0+deb13u1.dsc",
+      "sha256": "9ed2ed34cbe7f056eeebbe9045c5e2d15e41b5b053fe7c8ba6979a0b6fb081ce",
+      "bytes": 5950
+    },
+    "files": [
+      {
+        "name": "ffmpeg_7.1.5.orig.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/f/ffmpeg/ffmpeg_7.1.5.orig.tar.xz",
+        "sha256": "de668509caf9e35e3cd162473441fdb29538c6d96ed080292b3cf9e6fc5d558f",
+        "bytes": 11050340,
+        "role": "upstream-source"
+      },
+      {
+        "name": "ffmpeg_7.1.5.orig.tar.xz.asc",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/f/ffmpeg/ffmpeg_7.1.5.orig.tar.xz.asc",
+        "sha256": "7ce4b9d56e3ef0cd4c3a9c0b2c8a034ac91e6c4c011c1f10b05a8aa7292fca35",
+        "bytes": 520,
+        "role": "upstream-signature"
+      },
+      {
+        "name": "ffmpeg_7.1.5-0+deb13u1.debian.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian/20261030T000000Z/pool/main/f/ffmpeg/ffmpeg_7.1.5-0+deb13u1.debian.tar.xz",
+        "sha256": "a1be51d8a10744952fe94fa318bf71bbc8074bed0951382c079ab7ef227f74ef",
+        "bytes": 54176,
+        "role": "debian-packaging"
+      }
+    ],
+    "signatureVerification": {
+      "verified": false,
+      "note": "Source pins were selected from the pinned Debian snapshot Sources index. The uploader signature was not separately authenticated."
+    }
+  },
+  "supportedSourceVersions": [
+    "7:7.1.5-0+deb13u1"
+  ],
+  "packageVersion": "7:7.1.5-0+deb13u1+getpatched1",
+  "releaseSerial": 1,
+  "changelog": {
+    "distribution": "trixie",
+    "urgency": "low",
+    "maintainer": "GetPatched Maintainers <packages@getpatched.dev>",
+    "date": "Mon, 16 Nov 2026 08:00:00 +0000"
+  },
+  "binaryPackages": [
+    "ffmpeg",
+    "libavcodec61",
+    "libavdevice61",
+    "libavfilter10",
+    "libavformat61",
+    "libavutil59",
+    "libpostproc58",
+    "libswresample5",
+    "libswscale8"
+  ],
+  "patches": []
+}
