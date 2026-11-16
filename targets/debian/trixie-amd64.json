@@ -1,5 +1,6 @@
 {
   "schemaVersion": 2,
+  "status": "ci-baseline",
   "id": "debian-trixie-amd64",
   "base": {
     "distribution": "Debian",
@@ -68,6 +69,5 @@
     "libswresample5",
     "libswscale8"
   ],
-  "patches": [],
-  "status": "unreleased-development-candidate"
+  "patches": []
 }
